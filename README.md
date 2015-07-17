@@ -1,2 +1,2 @@
 # mini3216
-This is first comit test
+This is first commit test
