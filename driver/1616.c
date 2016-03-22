@@ -41,15 +41,6 @@ void DisplayLine(UINT8 u8_line, UINT8 *u8_buff)
 }
 
 
-
-void DisplayScreen(void)
-{
-    static UINT8 u8_line = 0;
-    u8_line = ++u8_line%16;
-    
-    DisplayLine((u8_line), g_buff+(u8_line*4));
-}
-
 void DisplayMute(void)
 {
     UINT8 i;
@@ -61,6 +52,14 @@ void DisplayMute(void)
     }
     LT=0;                  //Ëø´æ½Å
     LT=1; 
+}
+
+void DisplayScreen(void)
+{
+    static UINT8 u8_line = 0;
+    
+    u8_line = ++u8_line%16;
+    DisplayLine((u8_line), g_buff+(u8_line*4));
 }
 
 void display_time_stop(void)

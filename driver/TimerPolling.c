@@ -7,7 +7,7 @@ sbit LED = P1^4;
 
 void Task1(void);
 
-#define TASK_NUM   (3)                  //  这里定义的任务数为4，表示有三个任务会使用此定时器定时。
+#define TASK_NUM   (2)                  //  这里定义的任务数为4，表示有三个任务会使用此定时器定时。
 /**************************************************************************************
 * Variable definition
 * 1. 程序运行标记：0-不运行，1运行
@@ -18,23 +18,10 @@ void Task1(void);
 static TASK_COMPONENTS TaskComps[] = 
 {
     {0, 0, 2,    DisplayScreen},
-    {0, 0, 2,    Task1},
     {0, 0, 500,  display_time_stop},
     
      // 这里添加你的任务。。。。
 };
-
-
-/**************************************************************************************
-* FunctionName   : Task1()
-* Description    : 任务 1
-* EntryParameter : None
-* ReturnValue    : None
-**************************************************************************************/
-void Task1(void)
-{
-    
-}
 
 /**************************************************************************************
 * FunctionName   : TaskRemarks()
@@ -79,12 +66,5 @@ void TaskProcess(void)
 
         TaskComps[1].TaskHook();
         TaskComps[1].Run = 0;
-    } 
-    
-    else if (TaskComps[2].Run)
-    {
-
-        TaskComps[2].TaskHook();
-        TaskComps[2].Run = 0;
     }
 }
