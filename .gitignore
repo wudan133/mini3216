@@ -1,0 +1,16 @@
+#KEIL C
+*.obj
+*.lst
+*.plg
+*.m51
+*.Bak
+*.__i
+*.sbr
+*.idb
+*.pdb
+*.ilk
+*.pch
+*.ncb
+*.exe
+*.res
+*.crf
