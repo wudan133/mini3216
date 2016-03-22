@@ -385,11 +385,6 @@
               <FileType>1</FileType>
               <FilePath>.\driver\Font.c</FilePath>
             </File>
-            <File>
-              <FileName>Timer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\driver\Timer.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

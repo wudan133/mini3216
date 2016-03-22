@@ -9,9 +9,9 @@
 
 #include "typedef.h"
 
-sbit  DS1302_CLK = P0^6;              //实时时钟时钟线引脚 
-sbit  DS1302_IO  = P0^5;              //实时时钟数据线引脚 
-sbit  DS1302_RST = P0^4;              //实时时钟复位线引脚
+sbit  DS1302_CLK = P2^5;              //实时时钟时钟线引脚 
+sbit  DS1302_IO  = P2^6;              //实时时钟数据线引脚 
+sbit  DS1302_RST = P2^7;              //实时时钟复位线引脚
 
 sbit  ACC0 = ACC^0;
 sbit  ACC7 = ACC^7;

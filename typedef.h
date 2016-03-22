@@ -9,9 +9,9 @@
 sfr AUXR  = 0x8E; //Auxiliary Register  T0x12 T1x12 UART_M0x6 BRTR S2SMOD BRTx12 EXTRAM S1BRS  0000,0000
 sfr BRT   = 0x9C; //S2 Baud-Rate Timer 
 
-//#define FOSC 22118400L      //System frequency
+#define FOSC 22118400L      //System frequency
 
-#define FOSC 24576000L      //System frequency
+//#define FOSC 24576000L      //System frequency
 
 typedef enum _VALUE
 {

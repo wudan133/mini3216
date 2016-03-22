@@ -2,7 +2,6 @@
 #include "UART.h"
 #include "DS1302.H"
 #include "1616.h"
-#include "timer.h"
 
 
 #define INTERRUPT_TIME          500UL //us
