@@ -57,9 +57,10 @@ void DisplayMute(void)
 void DisplayScreen(void)
 {
     static UINT8 u8_line = 0;
-    
+    TEST = 1;
     u8_line = ++u8_line%16;
     DisplayLine((u8_line), g_buff+(u8_line*4));
+    TEST = 0;
 }
 
 void display_time_stop(void)

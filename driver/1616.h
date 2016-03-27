@@ -9,6 +9,8 @@ sbit R1=P3^0;    //定义数据引脚
 sbit SK=P3^1;    //定义数据时钟引脚
 sbit LT=P3^2;    //定义锁存引脚
 
+sbit TEST = P1^3;    //用于测试时间
+
 extern UINT8 g_buff[64];
 
 void DisplayScreen(void);
